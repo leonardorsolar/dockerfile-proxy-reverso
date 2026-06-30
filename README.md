@@ -5,13 +5,25 @@ Este projeto cria um container Docker com Nginx servindo uma página HTML estát
 ## Pré-requisitos
 
 - Docker instalado
+- Git clone: 
+
+```bash
+git clone https://github.com/leonardorsolar/dockerfile-proxy-reverso.git
+```
+
 
 ## Como construir a imagem
 
 ```bash
 docker build -t meu-nginx .
 ```
-
+é usado para criar uma imagem Docker a partir de um Dockerfile.
+docker: chama o Docker.
+build: informa ao Docker que ele deve construir (build) uma imagem.
+A opção -t significa tag (nome da imagem).
+meu-nginx: é o nome que será dado à imagem criada.
+. O ponto (.) representa o contexto da construção.
+Ele significa: "Utilize a pasta atual como contexto e procure nela o arquivo Dockerfile."
 ## Como executar o container
 
 ```bash
