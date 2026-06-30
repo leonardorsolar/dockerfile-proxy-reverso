@@ -17,13 +17,25 @@ git clone https://github.com/leonardorsolar/dockerfile-proxy-reverso.git
 ```bash
 docker build -t meu-nginx .
 ```
-é usado para criar uma imagem Docker a partir de um Dockerfile.
-docker: chama o Docker.
-build: informa ao Docker que ele deve construir (build) uma imagem.
-A opção -t significa tag (nome da imagem).
-meu-nginx: é o nome que será dado à imagem criada.
-. O ponto (.) representa o contexto da construção.
-Ele significa: "Utilize a pasta atual como contexto e procure nela o arquivo Dockerfile."
+# Docker Build
+
+O comando abaixo é usado para criar uma imagem Docker a partir de um **Dockerfile**:
+
+```bash
+docker build -t meu-nginx .
+```
+
+## Explicação dos parâmetros
+
+- **`docker`**: chama o Docker.
+- **`build`**: informa ao Docker que ele deve construir (**build**) uma imagem.
+- **`-t`**: significa **tag**, ou seja, define o nome da imagem.
+- **`meu-nginx`**: é o nome que será dado à imagem criada.
+- **`.` (ponto)**: representa o **contexto da construção**.
+
+O ponto (`.`) significa:
+
+> **"Utilize a pasta atual como contexto e procure nela o arquivo `Dockerfile`."**
 ## Como executar o container
 
 ```bash
